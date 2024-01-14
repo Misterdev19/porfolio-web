@@ -1,9 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<img class="rounded-full w-[100px] h-[100px] mb-4" src="https://avatars.githubusercontent.com/u/109445222?s=400&u=17963cd6a8bf1f42410ea314c76c87c270c98f33&v=4" alt="Juan camilo foto">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hey, soy Juan Camilo 
+					  <a href="https://www.linkedin.com/in/juan-camilo-penagos-yara-2582bb207/"
+					  class="flex justify-center items-center"
+					  target="_blank"
+					  rel="noopener" 
+					  >
+						  <Badge>Disponible para trabajar</Badge>	
+					  </a>
+			</h1>
+			<h2 class="text-2xl text-wrap"><spam class="opacity-80">+4 años de experiencia</spam>.
+				<span class="text-yellow-200/90 opacity-80">Desarrollador Web Full Stack</span> .De 
+				<span class="text-red-200/90">Cali, Colombi</span>. Apación por la programación.
+			</h2>
+		</section>
 	</main>
 </Layout>
