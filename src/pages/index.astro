@@ -1,15 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import Linkedin from '../components/icon/Linkedin.astro';
 import SocialPils from '../components/SocialPils.astro';
 import GitHub from '../components/icon/GitHub.astro';
 import Mail from '../components/icon/Mail.astro';
+import Experience from '../components/Experience.astro';
+import Brifcase from '../components/icon/Brifcase.astro';
 ---
 
 <Layout title="Portfolio de Juan Camilo Penagos Yara - Desarrollador Web Full Stack">
 	<main >
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<SectionContainer class="py-44 pb-22">
 			<img class="rounded-full w-[100px] h-[100px] mb-4" src="https://avatars.githubusercontent.com/u/109445222?s=400&u=17963cd6a8bf1f42410ea314c76c87c270c98f33&v=4" alt="Juan camilo foto">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
 				Hey, soy Juan Camilo 
@@ -35,12 +38,19 @@ import Mail from '../components/icon/Mail.astro';
 					  Linkedin
 				  </SocialPils>
 				  <SocialPils >
-					  <Mail class="w-6 h-6"/>
+					  <Mail class="w-6 h-6"/> 
 					  jcpenagos716@outlook.com
 				  </SocialPils>
 			  </nav>
 				
 		
-		</section>
+		</SectionConta>
+		<SectionContainer id="experiencia">
+			 <h2 class="text-4xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Brifcase class="size-9"/>
+				Experiencia laboral
+			 </h2>
+			 <Experience/>
+		</SectionContainer>
 	</main>
 </Layout>
